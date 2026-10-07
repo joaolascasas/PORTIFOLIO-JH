@@ -1,0 +1,1142 @@
+*{box-sizing: border-box;
+margin: 0;
+font-family: "Alan Sans", sans-serif;
+}
+
+body{
+    --BGbtnDark: #EEF2FF;
+    --corBG: #080708;
+    --corFonte: white;
+    background-color: var(--corBG);
+    height: 5200px;
+    color: var(--corFonte);
+}
+
+body.Claro{
+
+    --BGbtnDark: #fafafa;
+    --corBG: #f8f8f7;
+    --corFonte: #020024;
+    --corBGinput: #0200244C;
+}
+
+#btnDarkmodemob{
+    display: none;
+}
+
+.fa-moon{
+    color: #6366F1;
+    font-size: 1.6em;
+    vertical-align: middle;
+}
+
+.fa-sun{
+    color: #F59E0B;
+    vertical-align: middle;
+    font-size: 1.6em;
+}
+
+#libtnDarkmode{
+    width: 10%;
+    height: 35%;
+
+    button{
+        width: 28%;
+        height: 100%;
+        background-color: var(--BGbtnDark);
+        border-radius: 50px;
+        border: none;
+    }
+}
+
+#menuBtn{
+    display: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 130px;
+    background-color: #3F00AC;
+}
+
+header ul{
+    display: flex;
+    height: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+
+header ul>a:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+dialog {
+    position: relative;
+    background-color: #1A1130;
+    bottom: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 40px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+
+#closeBtn{
+    background: none;
+    color: white;
+    
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+dialog ul {
+    list-style: none;
+    padding: 0;
+}
+
+dialog li {
+    margin: 20px 0;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+
+.Darkmodeli{
+    border-bottom: none;
+}
+
+dialog a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*Início*/
+
+#inicio{
+    display: flex;
+    width: 80%;
+    height: 1050px;
+    padding: 7%;
+    padding-top: 10%;
+    margin: auto;
+}
+
+.roxoclaro{
+    color: #7C86FF;
+    
+}
+
+.roxoazulado{
+    background: linear-gradient(90deg, #3F00AC, #7C86FF);
+    background-clip: text;
+    color: transparent;
+}
+
+
+#inicio h1{
+    font-size: 3.5em;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+
+#inicio p{
+    width: 60%;
+    height: 40%;
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#inicio-texto button{
+    width: 250px;
+    height: 50px;
+    border-radius: 18px;
+    margin: 1%;
+    font-weight: bold;
+}
+
+#btnprojeto{
+    position: relative;
+    top: 40px;
+    background-color: #3F00AC;
+    border: none;
+    font-size: 1.1em;
+    color: white;
+}
+
+#btncontato{
+    position: relative;
+    top: 40px;
+    background-color: var(--corBG);
+    border: solid 1px #3F00AC;
+    font-size: 0.9em;
+    color: var(--corFonte);
+}
+
+#btnprojeto:hover{
+    cursor: pointer;
+    background-color: var(--corBG);
+    transition: 0.5s;
+    border: solid 1px #3F00AC;
+    transform: scale(1.1);
+    color: var(--corFonte);
+}
+
+#btncontato:hover{
+    cursor: pointer;
+    background-color: #3F00AC;
+    transition: 0.5s;
+    border: none;
+    transform: scale(1.1);
+    color: white;
+}
+
+#inicio-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border: solid 1px #3F00AC;
+    border-radius: 15px;
+}
+
+#inicio-img>img{
+    object-fit: contain;
+    width: 70%;
+}
+
+#inicio-img:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+hr{
+    opacity: 10%;
+}
+
+/*FIM Início*/
+
+
+/*Sobre*/
+
+#sobre{
+    width: 80%;
+    height: 1050px;
+    padding-top: 8%;
+    margin: auto;
+}
+
+#sobreTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#sobreContainer{
+    display: flex;
+    width: 110%;
+    height: 590px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#sobreTitulo h1{
+    font-size: 3.5em;
+    margin-bottom: 70px;
+}
+
+#sobreTexto{
+    font-size: 1.5em;
+    width: 33%;
+    text-align: justify;
+    padding-right: 100px;
+    line-height: 1.5em;
+    text-indent: 55px;
+}
+
+#cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.card{
+    width: 380px;
+    height: 270px;
+    border: solid 1px #3F00AC;
+    border-radius: 12px;
+}
+
+.card div{
+    display: flex;
+}
+
+.card:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.card img{
+    object-fit: contain;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+}
+
+.card h1{
+    display: flex;
+    height: 90px;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.card p{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    font-size: 1.4em;
+}
+
+/*FIM Sobre*/
+
+/*Habilidades*/
+
+#habilidades{
+    width: 80%;
+    height: 1050px;
+    padding-top: 10%;
+    margin: auto;
+}
+
+#habilidades h2{
+    display: flex;
+    justify-content: center;
+}
+
+#skillsContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+#skillsContainer div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#habilidades div>h1{
+    font-size: 3.5em;
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+#softskills p{
+    width: 50%;
+    font-size: 1.5em;
+    text-align: justify;
+    padding-top: 50px;
+    line-height: 1.5em;
+}
+
+#hardskills p{
+    width: 50%;
+    font-size: 1.5em;
+    padding-top: 50px;
+}
+
+#hardskills li{
+    font-size: 1.5em;
+    margin-left: 100px;
+}
+
+/*FIM Habilidades*/
+
+/*Projetos*/
+
+#projetos{
+    width: 80%;
+    height: 570px;
+    padding-top: 4%;
+    margin: auto;
+}
+
+#projetos h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+#projetos main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.divsprojeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 22%;
+    height: 250px;
+    border: solid 1px #3F00AC;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.divsprojeto img{
+    object-fit: contain;
+    width: 28%;
+}
+
+.divsprojeto button{
+    width: 170px;
+    height: 45px;
+    background-color: #B1B6EF;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--corFonte);
+}
+
+.divsprojeto button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/*FIM Projetos*/
+
+/*Contato*/
+
+#contato{
+    width: 80%;
+    height: 1140px;
+    padding-top: 10%;
+    margin: auto;
+}
+
+#contato h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#contato main{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 650px;
+    border: solid 1px #3F00AC;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#contato main>div{
+    width: 35%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+
+#contato main>div h1{
+    font-size: 3.2em;
+    padding-left: 25px;
+}
+
+#textoForm{
+    padding-top: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 63%;
+    color: var(--corFonte);
+    padding-left: 25px;
+    margin-bottom: 40px;
+}
+
+nav{
+    display: flex;
+}
+
+nav>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: black;
+    border: solid 1px #3F00AC;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav>div img{
+    object-fit: contain;
+    width: 50px;
+}
+
+nav p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 54px;
+    padding-left: 10px;
+}
+
+nav span{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+}
+
+form div>input{
+    width: 100%;
+    height: 60px;
+    border: solid 1px #3F00AC;
+    border-radius: 10px;
+    background-color: var(--corBGinput);
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 1.02em;
+}
+
+form>div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 70px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#mensagem{
+    display: flex;
+    flex-direction: column;
+    margin-left: 22%;
+    margin-bottom: 30px;
+}
+
+textarea{
+    width: 73.2%;
+    height: 200px;
+    border: solid 1px #3F00AC;
+    border-radius: 15px;
+    background-color: var(--corBGinput);
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 1.05em;
+    font-weight: bold;
+    color: var(--corFonte);
+}
+
+form button{
+    margin-left: 7px;
+    width: 59%;
+    height: 45px;
+    background-color: #3F00AC;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.05em;
+    font-weight: bold;
+    color: white;
+}
+
+form button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/*FIM Contato*/
+
+/*Rodapé*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+}
+
+footer p{
+    font-size: 1.4em;
+}
+
+@media (max-width: 600px){
+
+    /*Início*/
+
+    body{
+        --BGbtnDark: #EEF2FF;
+        --corBG: #080708;
+        --corFonte: white;
+        background-color: var(--corBG);
+        width: 100%;
+        height: 4600px;
+    }
+
+    body.no-scroll {
+        overflow: hidden;
+    }
+
+    body.Claro{
+        --corBG: #f8f7f8;
+        --corFonte: #020024;
+        --corBGinput: #0200244C;
+    }
+
+    dialog a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    #btnDarkmodemob{
+        display: inline;
+        background-color: var(--BGbtnDark);
+        border: none;
+        margin-left: 10px;
+        border-radius: 50%;
+        vertical-align: middle;
+        text-align: center;
+        width: 45px;
+        height: 45px;
+    }
+
+    #menuBtn{
+        display: block;
+        background: none;
+        border: none;
+
+        img{
+            object-fit: contain;
+            width: 50px;
+        }
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3F00AC;
+        width: 100vw;
+        height: 70px;
+
+        ul{
+            display: none;
+        }
+
+        input{
+            position: relative;
+            left: 35px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    header ul>a:hover{
+    cursor: pointer;
+    transition: 0;
+    transform: none;
+}
+
+    #inicio{
+        width: 100%;
+        height: 500px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 60px;
+    }
+
+    #inicio h2{
+        margin-top: 50px;
+        font-size: 1.1em;
+        height: 50px;
+    }
+
+    #inicio h1{
+        font-size: 1.9em;
+        height: 60px;
+    }
+
+    #inicio p{
+        width: 80%;
+        font-size: 1em;
+        text-align: justify;
+        font-weight: bold;
+        line-height: 1.3em;
+    }
+
+    #inicio-texto{
+        flex-wrap: wrap;
+    }
+
+    #inicio-texto button{
+        width: 120px;
+        height: 45px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    #inicio-img{
+        display: none;
+    }
+
+    /*FIM Início*/
+
+    /*Sobre*/
+    #sobre{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 1220px;
+        padding-left: 40px;
+        padding-right: 40px;
+        flex-wrap: wrap;
+    }
+
+
+    #sobreTitulo{
+        height: 80px;
+
+        h1{
+            margin-bottom: 0px;
+            font-size: 2em;
+        }
+
+        h2{
+            font-size: 1em;
+        }
+    }
+
+    #sobreContainer{
+        flex-direction: column;
+        width: 100%;
+        height: 590px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #sobreTexto{
+        position: relative;
+        top: -20px;
+        font-size: 1em;
+        width: 100%;
+        text-align: justify;
+        padding-right: 0px;
+        line-height: 1.5em;
+        text-indent: 0px;
+        margin-bottom: 20px;
+}
+
+    
+
+    #cardsContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 28px;
+    }
+
+    .card{
+        width: 185px;
+        height: 170px;
+        border: solid 1px #3F00AC;
+        border-radius: 12px;
+
+        h1{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            font-size: 0.5em;
+        }
+        p{
+            display: flex;
+            margin-top: 15px;
+            justify-content: center;
+            font-size: 0.8em;
+        }
+
+        img{
+            width: 45px;
+            height: 45px;
+        }
+    
+    }
+
+    /*FIM Sobre*/
+
+    /*Habilidades*/
+
+#habilidades{
+    width: 100%;
+    height: 985px;
+    padding-top: 4%;
+    margin: auto;
+}
+
+#habilidades h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+#skillsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skillsContainer div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#habilidades div>h1{
+    font-size: 2.5em;
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+#softskills p{
+    width: 100%;
+    font-size: 0.9em;
+    text-align: justify;
+    padding-top: 20px;
+    line-height: 1.5em;
+}
+
+#hardskills p{
+    width: 100%;
+    font-size: 0.9em;
+    padding-top: 10px;
+}
+
+#hardskills li{
+    
+    font-size: 0.9em;
+    margin-left: 0px;
+}
+
+/*FIM Habilidades*/
+/*Projetos*/
+
+#projetos{
+    width: 80%;
+    height: 870px;
+    padding-top: 4%;
+    margin: auto;
+}
+
+#projetos h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+
+#projetos main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.divsprojeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 220px;
+    border: solid 1px #3F00AC;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.divsprojeto img{
+    object-fit: contain;
+    width: 28%;
+}
+
+.divsprojeto button{
+    width: 170px;
+    height: 45px;
+    background-color: #B1B6EF;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.divsprojeto button:hover{
+    cursor: pointer;
+    transform: none;
+    transition: 0;
+}
+
+#btnprojeto:hover{
+    cursor: pointer;
+    background-color: initial;
+    transition: 0;
+    border: solid 1px #3F00AC;
+    transform: none;
+    color: var(--corFonte);
+}
+
+#btncontato:hover{
+    cursor: pointer;
+    background-color: #3F00AC;
+    transition: 0;
+    border: none;
+    transform: none;
+    color: white;
+}
+
+/*FIM Projetos*/
+/*Contato*/
+
+#contato{
+    width: 90%;
+    height: 740px;
+    padding-top: 4%;
+    margin: auto;
+}
+
+#contato h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 1em;
+}
+
+#contato main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    height: 570px;
+    border: solid 1px #3F00AC;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#contato main>div{
+    width: 100%;
+    height: 130px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+#contato main>div h1{
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 15px;
+}
+
+#textoForm{
+    display: none;
+    padding-top: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 63%;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 25px;
+    margin-bottom: 40px;
+}
+
+nav{
+    display: none;
+}
+
+nav>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: black;
+    border: solid 1px #3F00AC;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav>div img{
+    object-fit: contain;
+    width: 50px;
+}
+
+nav p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 54px;
+    padding-left: 10px;
+}
+
+nav span{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+form div>input{
+    width: 100%;
+    height: 50px;
+    border: solid 1px #3F00AC;
+    border-radius: 10px;
+    background-color: black;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+form>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+label{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+#mensagem{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#msglabel{
+    margin-right: 138px;
+}
+
+textarea{
+    width: 73.2%;
+    height: 150px;
+    border: solid 1px #3F00AC;
+    border-radius: 15px;
+    background-color: black;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+form button{
+    margin-left: 0px;
+    width: 72%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #3F00AC;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+form button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/*FIM Contato*/
+
+/*Rodapé*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 80%;
+    margin: auto;
+}
+
+footer h2{
+    font-size: 0.9em;
+}
+
+footer p{
+    font-size: 1em;
+}
+}

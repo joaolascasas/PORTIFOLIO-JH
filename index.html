@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Henrique</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body id="body">
+    <header>
+        <button id="btnDarkmodemob" onclick="Darkmode()">
+            <i id="iconeMob" class="fa-solid fa-moon"></i>
+        </button>
+        <button id="menuBtn"><img src="imagens/icone-menu-hamburguer.png" alt=""></button>
+
+        <ul>
+            <a href="#inicio">
+                <li>Início</li>
+            </a><a href="#sobre">
+                <li>Sobre</li>
+            </a><a href="#habilidades">
+                <li>Habilidades</li>
+            </a><a href="#projetos">
+                <li>Projetos</li>
+            </a><a href="#contato">
+                <li>Contato</li>
+            </a>
+            <li id="libtnDarkmode"><button id="btnDarkmode" onclick="Darkmode()">
+                <i id="iconePC" class="fa-solid fa-moon"></i>
+            </button></li>
+        </ul>
+        
+    </header>
+    <dialog id="menuModal">
+        <button id="closeBtn">✕</button>
+
+        <ul>
+            <a href="#inicio">
+                <li>Início</li>
+            </a><a href="#sobre">
+                <li>Sobre</li>
+            </a><a href="#habilidades">
+                <li>Habilidades</li>
+            </a><a href="#projetos">
+                <li>Projetos</li>
+            </a><a href="#contato">
+                <li>Contato</li>
+            </a>
+            <li class="Darkmodeli"></li>
+        </ul>
+    </dialog>
+
+    <section id="inicio">
+        <div id="inicio-texto">
+            <h2>Olá, <span class="roxoclaro">eu sou</span></h2>
+            <h1>João <span class="roxoazulado">Henrique,</span></h1>
+            <p>tenho 17 anos e atualmente estou cursando o Segundo Ano do <span class="roxoazulado">curso técnico de TI do Colégio Cotemig</span>. Gosto muito de <span class="roxoclaro">tecnologia</span> e busco sempre ampliar meu conhecimento para o meu futuro como um <span class="roxoclaro">desenvolvedor</span>.</p>
+            
+            <a href="#projetos"><button id="btnprojeto">Ver Projetos</button></a>
+            <a href="#contato"><button id="btncontato">ENTRAR EM CONTATO</button></a>
+            
+        </div>
+
+        <div id="inicio-img">
+            <img src="imagens/imagemzinha.png" alt="">
+        </div>
+        
+    </section>
+
+    <hr>
+
+    <section id="sobre">
+        <div id="sobreTitulo">
+            <h2 class="roxoclaro">QUEM SOU EU</h2>
+            <h1>Sobre <span class="roxoazulado">Mim</span></h1>
+        </div>
+        
+        <div id="sobreContainer">
+            <div id="sobreTexto">
+                <p>Desde a minha infância computadores e video-games sempre    foram o meu fascínio. Além disso, mesmo muito jovem, possuia uma grande facilidade e habilidade para aprender a mexer e utilizar os aparelhos eletrônicos.</p>
+                <p>Com o passar dos anos, a minha curiosidade sobre o assunto foi aumentando até que eu conheci o COTEMIG. No curso tive contato com o que eu sempre gostei e agora no Segundo Ano posso dizer que já dei os primeiros passos para me tornar um desenvolvedor.</p>
+            </div>
+
+            <main id="cardsContainer">
+                <div class="card">
+                    <div>
+                        <img src="imagens/web.png" alt="Dev WEB">
+                        <h1>Dev. WEB</h1>
+                    </div>
+                    <p>Desenvolvimento Web com <br>HTML, CSS e JavaScript.</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="imagens/poo.png" alt="P.O.O">
+                        <h1>P.O.O</h1>
+                    </div>
+                    <p>Programação Orientada a <br> Objetos em C# (Console .NET).</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="imagens/sql.png" alt="Banco de Dados(MySQL)">
+                    <h1>Banco de Dados</h1>
+                    </div>
+                    <p>Criação e manipulação de <br> Banco de Dados com MySQL.</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="imagens/winlin.png" alt="SO's">
+                    <h1>Sistemas Operacionais</h1>
+                    </div>
+                    <p>Manipulação de SOs <br> Windows e Linux (Ubuntu).</p>
+                </div>
+            </main>
+        </div>
+    </section>
+    <hr>
+    <section id="habilidades">
+        <h2 class="roxoclaro">HABILIDADES</h2>
+
+        <main id="skillsContainer">
+            <div id="softskills">
+                <h1>Soft <span class="roxoazulado">Skills</span></h1>
+                <p>Sou uma pessoa objetiva e focada em realizar as tarefas necessárias. Tenho boa capacidade de liderança em grupo, inteligência emocional e adaptabilidade para resolver problemas.</p>
+            </div>
+
+            <div id="hardskills">
+                <h1>Hard <span class="roxoazulado">Skills</span></h1>
+                <p>Tenho conhecimentos em:</p>
+                <ul>
+                    <li>HTML, CSS e JavaScript para <br> desenvolvimento WEB;</li>
+                    <li>Programação Orientada a <br> Objetos em C# (Console .NET);</li>
+                    <li>Criação e manipulação de <br> Banco de Dados em MySQL; </li>
+                    <li>Domínio de ferramentas <br> Google Workspace; </li>
+                    <li>Manipulação e configuração de <br> SOs Windows e Linux(Ubuntu) - <br> em conjunto de experiência de <br> instalção de serviços FTP, SSH <br> e APACHE 2;</li>
+                    <li>Inglês avançado.</li>
+                </ul>
+            </div>
+        </main>
+    </section>
+
+    <hr>
+
+    <section id="projetos">
+        <h2 class="roxoclaro">PROJETOS</h2>
+        <main>
+            <div class="divsprojeto">
+                <img src="imagens/TP.png" alt="">
+                <p>Tabela Periódica apenas em HTML e CSS</p>
+                <a href="https://joaolascasas.github.io/Tabela-Periodica/" target="_blank" rel="noopener"><button>Acessar</button></a>
+            </div>
+            <div class="divsprojeto">
+                <img src="imagens/site.png" alt="">
+                <p>Reprodução de site apenas com uso de POSITION</p>
+                <a href="https://joaolascasas.github.io/ROOFTOP/" target="_blank" rel="noopener"><button>Acessar</button></a>
+            </div>
+            <div class="divsprojeto">
+                <img src="imagens/site.png" alt="">
+                <p>Reprodução de site com <br> uso de Display Flex</p>
+                <a href="https://joaolascasas.github.io/Louie---Free-Bootstrap-joaohenrique-VF-/" target="_blank" rel="noopener"><button>Acessar</button></a>
+            </div>
+        </main>
+    </section>
+
+    <hr>
+
+    <section id="contato">
+        <h2 class="roxoclaro">ENTRE EM CONTATO</h2>
+
+        <main>
+            <div>
+                <h1>Vamos <br><span class="roxoazulado">conversar?</span></h1>
+                <p id="textoForm">Se tiver interesse para algum serviço ou se haver qualquer dúvida não hesite em entrar em contato!</p>
+
+                <nav>
+                    <div>
+                        <img src="imagens/github.png" alt="github icon">
+                    </div>
+                    <p><span>GitHub</span><a href="https://github.com/joaolascasas/" target="_blank" rel="noopener">https://github.com/joaolascasas/</a></p>
+                </nav>
+                <nav>
+                    <div>
+                        <img src="imagens/linkedin.png" alt="github icon">
+                    </div>
+                    <p><span>Linkedin</span><a href="https://www.linkedin.com/in/joão-henrique-las-casas/" target="_blank" rel="noopener">https://www.linkedin.com/in/joão-henrique-las- <br> casas/</a></p>
+                </nav>
+            </div>
+
+            <form action="https://formsubmit.co/joaolascasas69@gmail.com" method="POST">
+                <div>
+                    <div class="inputs">
+                        <label for="Nome">Nome</label>
+                        <input type="text" placeholder="Seu nome..." name="nome">
+                    </div>
+ 
+                    <div class="inputs">
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="seu@email.com" name="email">
+                    </div>
+                </div>
+                
+                <div id="mensagem">
+                    <label for="Mensagem" id="msglabel">Mensagem</label>
+                    <textarea name="msg" id="" placeholder="Digite a sua mensagem..."></textarea>
+                </div>
+                
+                <button id="btnForm" type="submit">Enviar Mensagem</button>
+            </form>
+        </main>
+    </section>
+
+    <hr>
+
+    <footer>
+        <h2>JOÃO <span class="roxoazulado">HENRIQUE</span> \ COTEMIG \ TÉCNICO EM TI</h2>
+        <p>Email: <span class="roxoazulado">joaohenriquecasas09@gmail.com</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
