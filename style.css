@@ -84,7 +84,7 @@ header ul>a:hover{
 }
 
 dialog {
-    position: relative;
+    position: fixed;
     background-color: #1A1130;
     bottom: 200px;
     border: none;
